@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: ms-orders
+eureka:
+  client:
+    service-url:
+      defaultZone: ${eureka_url:http://localhost:8761/eureka}
+  instance:
+    prefer-ip-address: false
+
+getProduct:
+  url: http://ms-products/products/%s
+
+server:
+  port: 8082
