@@ -6,8 +6,8 @@ eureka:
     service-url:
       defaultZone: ${eureka_url:http://localhost:8761/eureka}
   instance:
-    prefer-ip-address: false
-    hostname: ${EUREKA_HOST:localhost}
+    prefer-ip-address: true
+    hostname: ms-orders
 
 getProduct:
   url: http://ms-products/products/%s
